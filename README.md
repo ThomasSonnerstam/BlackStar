@@ -2,7 +2,7 @@
 
 This is our first cross programme project done with digital designers and computer graphic designers.
 
-#GROUP BLACKSTAR
+## GROUP BLACKSTAR
 
 The group consists of two web developers (myself included), two digital designers and three computer graphic designers.
 
