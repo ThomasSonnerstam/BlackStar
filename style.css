@@ -40,9 +40,53 @@ nav {
 .specs {
     display: flex;
     flex-direction: column;
-    background-color: ;
+    justify-content: center;
+    background-color: var(--powderwhite);
     width: 100vw;
     height: 100vh;
+}
+
+.specs-text {
+    margin-bottom: 8em;
+}
+
+.specs h3,
+.specs p {
+    margin: 1em 0 0 5vw;
+}
+
+.input-button-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    align-self: center;
+    outline: none;
+    border: none;
+    background-color: var(--scandiumdark);
+    width: 90vw;
+    height: 4em;
+}
+
+input::placeholder {
+    font-size: 2em;
+    padding-left: 1em;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+button {
+    align-self: center;
+    width: 70vw;
+    height: 8vh;
+    outline: none;
+    border: none;
+    border-radius: 0.25em;
+    margin-top: 1.5em;
+    font-size: 1.5em;
 }
 
 /* MERCHANDISE */
