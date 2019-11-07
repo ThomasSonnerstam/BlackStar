@@ -9,11 +9,6 @@ body {
         sans-serif;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-}
-
 /* NAVIGATION */
 
 .hamburgermenu {
@@ -35,6 +30,9 @@ nav {
 /* SPECIFICATIONS */
 
 .specs {
+    display: flex;
+    flex-direction: column;
+    background-color: ;
     width: 100vw;
     height: 100vh;
 }
