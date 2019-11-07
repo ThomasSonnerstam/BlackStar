@@ -1,3 +1,11 @@
+:root {
+    --dawnorange: #FF8440;
+    --midnightblue: #061323;
+    --powderwhite: #EFF1F3;
+    --futuristicgrey: #BBCBD1;
+    --scandiumdark: #9CABB0;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
