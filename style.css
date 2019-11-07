@@ -48,11 +48,11 @@ nav {
 
 .specs-text {
     margin-bottom: 8em;
+    margin-left: 5vw;
 }
 
-.specs h3,
 .specs p {
-    margin: 1em 0 0 5vw;
+    margin-top: 1em;
 }
 
 .input-button-wrapper {
@@ -71,7 +71,7 @@ input {
 
 input::placeholder {
     font-size: 2em;
-    padding-left: 1em;
+    text-align: center;
 }
 
 input:focus::placeholder {
