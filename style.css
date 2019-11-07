@@ -5,6 +5,8 @@
 
 body {
     overflow-x: hidden;
+    font-family: aktiv-grotesk,
+        sans-serif;
 }
 
 main {
