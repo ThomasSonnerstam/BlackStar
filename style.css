@@ -17,6 +17,10 @@ body {
         sans-serif;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 /* NAVIGATION */
 
 header {
@@ -179,11 +183,69 @@ button {
     font-size: 1.5em;
 }
 
-/* MERCHANDISE */
+/* IMAGE CAROUSEL */
 
-.merch {
+.carousel {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 94vh;
+    width: 100vw;
+}
+
+.carousel-image-container {
+    position: absolute;
+}
+
+.carousel-track {
+    list-style: none;
+}
+
+.carousel-slide {
+    position: absolute;
+}
+
+
+.carousel-image {
     width: 100vw;
     height: 100vh;
+    /* object-fit: cover; */
+}
+
+.carousel-button {
+    background: transparent;
+    width: 20;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-button-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-button-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.carousel-button {
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-nav {
+    position: absolute;
+}
+
+.carousel-indicator {
+    margin: 0;
+    width: 10px;
+    height: 10px;
 }
 
 /* CONTACT */
