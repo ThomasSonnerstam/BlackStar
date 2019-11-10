@@ -194,22 +194,30 @@ button {
 }
 
 .carousel-image-container {
-    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    align-self: center;
 }
 
 .carousel-track {
+    display: flex;
     list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    transition: transform 0.5s ease-in;
 }
 
 .carousel-slide {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: -1;
 }
-
 
 .carousel-image {
     width: 100vw;
-    height: 100vh;
-    /* object-fit: cover; */
+    height: 94vh;
+    object-fit: cover;
 }
 
 .carousel-button {
@@ -240,13 +248,22 @@ button {
 
 .carousel-nav {
     position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-33.33%);
 }
 
 .carousel-indicator {
     margin: 0;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 0 2vw 2vh 2vw;
+    background-color: var(--midnightblue);
 }
+
+.carousel-indicator.current-slide {}
 
 /* CONTACT */
 
