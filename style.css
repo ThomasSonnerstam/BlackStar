@@ -17,6 +17,10 @@ body {
         sans-serif;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 /* NAVIGATION */
 
 header {
@@ -179,12 +183,87 @@ button {
     font-size: 1.5em;
 }
 
-/* MERCHANDISE */
+/* IMAGE CAROUSEL */
 
-.merch {
+.carousel {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 94vh;
+    width: 100vw;
+}
+
+.carousel-image-container {
     width: 100vw;
     height: 100vh;
+    align-self: center;
 }
+
+.carousel-track {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    transition: transform 0.5s ease-in;
+}
+
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: -1;
+}
+
+.carousel-image {
+    width: 100vw;
+    height: 94vh;
+    object-fit: cover;
+}
+
+.carousel-button {
+    background: transparent;
+    width: 20;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-button-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-button-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.carousel-button {
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-nav {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-33.33%);
+}
+
+.carousel-indicator {
+    margin: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 0 2vw 2vh 2vw;
+    background-color: var(--midnightblue);
+}
+
+.carousel-indicator.current-slide {}
 
 /* CONTACT */
 

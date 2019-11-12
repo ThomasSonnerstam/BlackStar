@@ -25,3 +25,27 @@ const navSlide = () => {
 }
 
 navSlide();
+
+// Function for the carousel image slide show
+
+const track = document.querySelector(".carousel-track");
+const slides = Array.from(track.children);
+const nextButton = document.querySelector(".carousel-button-right");
+const prevButton = document.querySelector(".carousel-button-left");
+const navDots = document.querySelector(".carousel-nav");
+const dots = Array.from(navDots.children);
+const slideSize = slides[0].getBoundingClientRect().width;
+
+// When you click the right arrow - turn to next slide
+nextButton.addEventListener("click", e => {
+    const currentSlide = track.querySelector(".current-slide");
+    const nextSlide = currentSlide.nextElementSibling;
+
+    // Move to the next slide
+    track.style.transform = "translateX(-100%";
+    currentSlide.classList.remove("current-slide");
+    nextSlide.classList.add("current-slide");
+
+
+
+});
