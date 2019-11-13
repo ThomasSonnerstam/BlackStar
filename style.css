@@ -21,94 +21,7 @@ main {
     overflow-x: hidden;
 }
 
-/* NAVIGATION */
 
-header {
-    width: 100vw;
-    position: fixed;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px 0;
-    height: 7vh;
-}
-
-.line {
-    height: 3px;
-    width: 30px;
-    margin: 2px;
-    background-color: var(--powderwhite);
-    transition: all 0.3s ease;
-}
-
-.hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.logo {
-    padding: 2%;
-    color: var(--powderwhite);
-    font-weight: 700;
-}
-
-.nav-links {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    right: 0px;
-    top: 6vh;
-    background-color: var(--midnightblue);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.5s ease-in;
-    transform: translateX(100%);
-}
-
-.nav-active {
-    transform: translateX(0%);
-}
-
-.nav-links li {
-    margin: 1em 0;
-    opacity: 0;
-}
-
-.nav-links a {
-    color: white;
-    letter-spacing: 0.2em;
-    text-decoration: none;
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .line-1 {
-    transform: rotate(-45deg) translate(-5px, 5px);
-}
-
-.toggle .line-2 {
-    opacity: 0;
-}
-
-.toggle .line-3 {
-    transform: rotate(45deg) translate(-5px, -5px);
-}
 
 /* FRONT PAGE */
 
@@ -277,19 +190,7 @@ button {
 @media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-    .nav-links {
-        width: 30vw;
-    }
-
-    /* .line {
-        height: 3px;
-        width: 3vw;
-        margin: 2px;
-        background-color: white;
-    } */
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
