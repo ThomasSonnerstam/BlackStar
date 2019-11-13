@@ -13,4 +13,20 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.slogan {
+    color: #FF8440;
+    font-size: 2.5em;
+    margin: 0 20px 25vh;
+}
+
+@media (min-width: 1024px) {
+
+    .slogan {
+        margin: 0 70px 10vh;
+    }
+
 }
