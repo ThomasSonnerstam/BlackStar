@@ -12,13 +12,13 @@
 }
 
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-family: aktiv-grotesk,
         sans-serif;
 }
 
 main {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* NAVIGATION */

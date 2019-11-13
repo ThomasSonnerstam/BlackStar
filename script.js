@@ -42,7 +42,7 @@ nextButton.addEventListener("click", e => {
     const nextSlide = currentSlide.nextElementSibling;
 
     // Move to the next slide
-    track.style.transform = "translateX(-100%";
+    nextSlide.style.transform = "translateX(-100%";
     currentSlide.classList.remove("current-slide");
     nextSlide.classList.add("current-slide");
 
