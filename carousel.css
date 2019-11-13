@@ -1,0 +1,51 @@
+.carousel-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.carousel-slide {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.carousel-slide img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+
+#prev-button {
+    left: 5%;
+}
+
+#next-button {
+    right: 5%;
+}
+
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

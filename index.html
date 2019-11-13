@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="frontpage.css">
+    <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="https://use.typekit.net/pzv4bzy.css">
 </head>
 
@@ -72,40 +73,16 @@
 
         <!-- IMAGE CAROUSEL -->
 
-        <section class="carousel">
-
-            <!-- LEFT BUTTON -->
-
-            <img class="carousel-button carousel-button-left" src="/images/left-arrow.png" alt="">
-
-            <!-- CAROUSEL IMAGE SLIDE SHOW -->
-            <div class="carousel-image-container">
-                <ul class="carousel-track">
-                    <li class="carousel-slide current-slide">
-                        <img class="carousel-image" src="/images/image1-placeholder.jpg" alt="">
-                    </li>
-                    <li class="carousel-slide">
-                        <img class="carousel-image" src="/images/image2-placeholder.jpg" alt="">
-                    </li>
-                    <li class="carousel-slide">
-                        <img class="carousel-image" src="/images/image3-placeholder.jpg" alt="">
-                    </li>
-                </ul>
+        <section class="carousel-container">
+            <img id="prev-button" class="arrow" src="./images/left-arrow.png" alt="">
+            <div class="carousel-slide">
+                <img id="last-clone" src="./images/image3-placeholder.jpg" alt="">
+                <img src="./images/image1-placeholder.jpg" alt="">
+                <img src="./images/image2-placeholder.jpg" alt="">
+                <img src="./images/image3-placeholder.jpg" alt="">
+                <img id="first-clone" src="./images/image1-placeholder.jpg" alt="">
             </div>
-
-            <!-- RIGHT BUTTON -->
-
-            <img class="carousel-button carousel-button-right" src="/images/right-arrow.png" alt="">
-
-
-            <!-- SMALL DOT INDICATORS -->
-            <div class="carousel-nav">
-                <button class="carousel-indicator"></button>
-                <button class="carousel-indicator"></button>
-                <button class="carousel-indicator"></button>
-            </div>
-
-
+            <img id="next-button" class="arrow" src="./images/right-arrow.png" alt="">
         </section>
 
         <!-- CONTACT -->
