@@ -129,9 +129,9 @@ nav {
     background-size: cover;
 }
 
-/* SPECIFICATIONS */
+/* CALL TO ACTION */
 
-.specs {
+.call-to-action {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,12 +140,12 @@ nav {
     height: 100vh;
 }
 
-.specs-text {
+.action-text {
     margin-bottom: 8em;
     margin-left: 5vw;
 }
 
-.specs p {
+.action-text p {
     margin-top: 1em;
 }
 
