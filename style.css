@@ -38,7 +38,7 @@ nav {
 
 .line {
     height: 3px;
-    width: 7vw;
+    width: 30px;
     margin: 2px;
     background-color: var(--powderwhite);
     transition: all 0.3s ease;
@@ -283,12 +283,12 @@ button {
         width: 30vw;
     }
 
-    .line {
+    /* .line {
         height: 3px;
         width: 3vw;
         margin: 2px;
         background-color: white;
-    }
+    } */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
