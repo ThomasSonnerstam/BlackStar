@@ -28,24 +28,33 @@ navSlide();
 
 // Function for the carousel image slide show
 
-const track = document.querySelector(".carousel-track");
-const slides = Array.from(track.children);
-const nextButton = document.querySelector(".carousel-button-right");
-const prevButton = document.querySelector(".carousel-button-left");
-const navDots = document.querySelector(".carousel-nav");
-const dots = Array.from(navDots.children);
-const slideSize = slides[0].getBoundingClientRect().width;
+const carouselSlide = document.querySelector(".carousel-slide");
+const carouselImages = document.querySelectorAll(".carousel-slide img");
+const prevButton = document.querySelector("#prev-button");
+const nextButton = document.querySelector("#next-button");
 
-// When you click the right arrow - turn to next slide
-nextButton.addEventListener("click", e => {
-    const currentSlide = track.querySelector(".current-slide");
-    const nextSlide = currentSlide.nextElementSibling;
+// Counter
 
-    // Move to the next slide
-    nextSlide.style.transform = "translateX(-100%";
-    currentSlide.classList.remove("current-slide");
-    nextSlide.classList.add("current-slide");
+let counter = 1;
 
+// Width of the images
 
+const imageWidth = carouselImages[0].clientWidth;
 
+// Start image slide on second picture (the first & last picture are duplicates)
+
+carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
+
+// Transition into next slide when pressing the next button
+
+nextButton.addEventListener("click", () => {
+    carouselSlide.style.transition = "transform 0.5s ease-in";
+    counter++;
+    carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
+});
+
+prevButton.addEventListener("click", () => {
+    carouselSlide.style.transition = "transform 0.5s ease-in";
+    counter--;
+    carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
 });
