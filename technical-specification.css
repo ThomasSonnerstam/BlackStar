@@ -1,0 +1,34 @@
+:root {
+    --dawnorange: #FF8440;
+    --midnightblue: #061323;
+    --powderwhite: #EFF1F3;
+    --futuristicgrey: #BBCBD1;
+    --scandiumdark: #9CABB0;
+}
+
+.specification-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/specs-placeholder.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.specification-container h2 {
+    color: var(--powderwhite);
+    font-size: 1.8em;
+    margin-bottom: 10vh;
+}
+
+@media (min-width: 1024px) {
+
+    .specification-container h2 {
+        margin: 0 70px 10vh;
+    }
+
+}
