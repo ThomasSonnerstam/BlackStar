@@ -48,13 +48,42 @@ carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
 // Transition into next slide when pressing the next button
 
 nextButton.addEventListener("click", () => {
+
+    if (counter >= carouselImages.length - 1) {
+        return;
+    }
+
     carouselSlide.style.transition = "transform 0.5s ease-in";
     counter++;
     carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
 });
 
 prevButton.addEventListener("click", () => {
+
+    if (counter <= 0) {
+        return;
+    }
+
     carouselSlide.style.transition = "transform 0.5s ease-in";
     counter--;
     carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
+
+});
+
+carouselSlide.addEventListener("transitionend", () => {
+
+    if (carouselImages[counter].id === "last-clone") {
+        carouselSlide.style.transition = "none";
+        counter = carouselImages.length - 2;
+        carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
+
+    }
+
+    if (carouselImages[counter].id === "first-clone") {
+        carouselSlide.style.transition = "none";
+        counter = carouselImages.length - counter;
+        carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
+
+    }
+
 });
