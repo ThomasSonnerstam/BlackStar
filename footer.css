@@ -8,11 +8,58 @@
 
 footer {
     background-color: var(--scandiumdark);
-    height: 80vh;
-    padding: 20vh 15% 3%;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    bottom: 0;
 }
 
-footer svg {
+.footer-logo {
     fill: var(--midnightblue);
+    stroke: var(--midnightblue);
+    width: 100%;
+    padding: 30% 10% 5%;
+}
 
+footer h2 {
+    margin: 10% 20px 2%;
+}
+
+footer p {
+    margin: 2% 20px 3%;
+}
+
+ul.social-media {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    overflow-x: hidden;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 5% 0 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-media li {
+    display: block;
+    max-height: 5vh;
+    width: 25%;
+    margin: auto;
+    text-align: center;
+}
+
+.social-media svg {
+    fill: var(--midnightblue);
+}
+
+hr {
+    border: 1px solid var(--midnightblue);
+    margin: 2% 20px 3%;
+}
+
+.clarification {
+    font-size: 0.7em;
+    text-align: center;
 }
