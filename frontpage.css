@@ -1,5 +1,13 @@
 /* FRONT PAGE */
 
+:root {
+    --dawnorange: #FF8440;
+    --midnightblue: #061323;
+    --powderwhite: #EFF1F3;
+    --futuristicgrey: #BBCBD1;
+    --scandiumdark: #9CABB0;
+}
+
 .frontpage {
     width: 100vw;
     height: 100vh;
@@ -17,10 +25,12 @@
     align-items: flex-end;
 }
 
-.slogan {
-    color: #FF8440;
+.frontpage h1 {
+    color: var(--powderwhite);
     font-size: 2.5em;
-    margin: 0 20px 25vh;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin: 0 20px 15vh;
 }
 
 @media (min-width: 1024px) {
