@@ -29,7 +29,12 @@ nav {
 }
 
 .logo {
-    padding: 3% 2% 2%;
+    padding: 3% 0 2%;
+    width: 22vw;
+}
+
+.logo svg {
+    fill: #EFF1F3;
 }
 
 .nav-links {

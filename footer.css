@@ -1,0 +1,18 @@
+:root {
+    --dawnorange: #FF8440;
+    --midnightblue: #061323;
+    --powderwhite: #EFF1F3;
+    --futuristicgrey: #BBCBD1;
+    --scandiumdark: #9CABB0;
+}
+
+footer {
+    background-color: var(--scandiumdark);
+    height: 80vh;
+    padding: 20vh 15% 3%;
+}
+
+footer svg {
+    fill: var(--midnightblue);
+
+}
