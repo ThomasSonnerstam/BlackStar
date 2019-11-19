@@ -22,6 +22,22 @@ const navSlide = () => {
         burger.classList.toggle("toggle");
     });
 
+
+    // VARFÖR FUNKAR INTE DETTA? 
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            nav.classList.remove("nav-active");
+            link.style.animation = "";
+        })
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            burger.classList.toggle("toggle");
+        })
+    });
+
 }
 
 navSlide();

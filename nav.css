@@ -64,6 +64,7 @@ nav {
 .nav-links li {
     margin: 1em 0;
     opacity: 0;
+    width: 50%;
 }
 
 .nav-links a {
