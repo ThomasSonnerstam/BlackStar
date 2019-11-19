@@ -1,0 +1,30 @@
+.about-us {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(117, 46, 46);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #EFF1F3;
+}
+
+.our-team {
+    width: 80vw;
+    margin-left: 5vw;
+}
+
+.our-mission {
+    width: 80vw;
+    align-self: flex-end;
+    margin-right: 5vw;
+}
+
+.our-mission h2,
+.our-mission p {
+    text-align: right;
+}
+
+.history {
+    width: 80vw;
+    margin-left: 5vw;
+}

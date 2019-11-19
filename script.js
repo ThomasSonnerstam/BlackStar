@@ -23,7 +23,7 @@ const navSlide = () => {
     });
 
 
-    // VARFÖR FUNKAR INTE DETTA? 
+    // WHY DOESN'T THIS WORK? 
 
     navLinks.forEach(link => {
         link.addEventListener("click", () => {
