@@ -12,7 +12,6 @@ footer {
     height: 100vh;
     display: block;
     bottom: 0;
-    position: relative;
 }
 
 .footer-logo {
@@ -28,20 +27,6 @@ footer h2 {
 
 footer p {
     margin: 2% 20px 3%;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
 }
 
 .pdf {
@@ -97,4 +82,16 @@ hr {
 .clarification {
     font-size: 0.7em;
     text-align: center;
+}
+
+
+@media (min-width: 1024px) {
+    .footer-logo {
+        width: 45%;
+        padding: 5vh 70px 3vh;
+    }
+
+    /* .social-media {
+        justify-content: flex-end;
+    } */
 }
