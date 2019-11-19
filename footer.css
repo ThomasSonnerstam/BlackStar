@@ -12,6 +12,7 @@ footer {
     height: 100vh;
     display: block;
     bottom: 0;
+    position: relative;
 }
 
 .footer-logo {
@@ -27,6 +28,35 @@ footer h2 {
 
 footer p {
     margin: 2% 20px 3%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.pdf {
+    width: 35vw;
+    height: 8vh;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 500;
+    background-color: var(--futuristicgrey);
+    color: var(--powderwhite);
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid var(--dawnorange);
+    border-radius: 20px 5px 5px 3px;
+    padding: 0.4em;
 }
 
 .social-media {
