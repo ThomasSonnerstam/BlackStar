@@ -26,64 +26,64 @@ const navSlide = () => {
 
 navSlide();
 
-// Function for the carousel image slide show
+// // Function for the carousel image slide show
 
-const carouselSlide = document.querySelector(".carousel-slide");
-const carouselImages = document.querySelectorAll(".carousel-slide img");
-const prevButton = document.querySelector("#prev-button");
-const nextButton = document.querySelector("#next-button");
+// const carouselSlide = document.querySelector(".carousel-slide");
+// const carouselImages = document.querySelectorAll(".carousel-slide img");
+// const prevButton = document.querySelector("#prev-button");
+// const nextButton = document.querySelector("#next-button");
 
-// Counter
+// // Counter
 
-let counter = 1;
+// let counter = 1;
 
-// Width of the images
+// // Width of the images
 
-const imageWidth = carouselImages[0].clientWidth;
+// const imageWidth = carouselImages[0].clientWidth;
 
-// Start image slide on second picture (the first & last picture are duplicates)
+// // Start image slide on second picture (the first & last picture are duplicates)
 
-carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
+// carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
 
-// Transition into next slide when pressing the next button
+// // Transition into next slide when pressing the next button
 
-nextButton.addEventListener("click", () => {
+// nextButton.addEventListener("click", () => {
 
-    if (counter >= carouselImages.length - 1) {
-        return;
-    }
+//     if (counter >= carouselImages.length - 1) {
+//         return;
+//     }
 
-    carouselSlide.style.transition = "transform 0.5s ease-in";
-    counter++;
-    carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
-});
+//     carouselSlide.style.transition = "transform 0.5s ease-in";
+//     counter++;
+//     carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
+// });
 
-prevButton.addEventListener("click", () => {
+// prevButton.addEventListener("click", () => {
 
-    if (counter <= 0) {
-        return;
-    }
+//     if (counter <= 0) {
+//         return;
+//     }
 
-    carouselSlide.style.transition = "transform 0.5s ease-in";
-    counter--;
-    carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
+//     carouselSlide.style.transition = "transform 0.5s ease-in";
+//     counter--;
+//     carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
 
-});
+// });
 
-carouselSlide.addEventListener("transitionend", () => {
+// carouselSlide.addEventListener("transitionend", () => {
 
-    if (carouselImages[counter].id === "last-clone") {
-        carouselSlide.style.transition = "none";
-        counter = carouselImages.length - 2;
-        carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
+//     if (carouselImages[counter].id === "last-clone") {
+//         carouselSlide.style.transition = "none";
+//         counter = carouselImages.length - 2;
+//         carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
 
-    }
+//     }
 
-    if (carouselImages[counter].id === "first-clone") {
-        carouselSlide.style.transition = "none";
-        counter = carouselImages.length - counter;
-        carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
+//     if (carouselImages[counter].id === "first-clone") {
+//         carouselSlide.style.transition = "none";
+//         counter = carouselImages.length - counter;
+//         carouselSlide.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
 
-    }
+//     }
 
-});
+// });
