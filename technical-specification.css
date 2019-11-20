@@ -7,7 +7,6 @@
 .specification-container img {
     width: 100vw;
     max-height: 100vh;
-    z-index: -1;
 }
 
 .specification-container h2 {
@@ -15,10 +14,4 @@
     font-size: 1.8em;
 }
 
-@media (min-width: 1024px) {
-
-    .specification-container h2 {
-        margin: 0 70px 10vh;
-    }
-
-}
+@media (min-width: 1024px) {}

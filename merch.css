@@ -2,10 +2,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: right;
-    position: relative;
+    text-align: left;
 }
 
 .merch h1 {
@@ -14,7 +11,7 @@
     line-height: 1.2em;
     z-index: 1;
     position: absolute;
-    margin: -55% 4% 0;
+    margin: 25% 4% 0;
 }
 
 .merch img {
@@ -38,11 +35,19 @@
     .merch {
         width: 50vw;
         margin-left: auto;
+        margin-top: -100vh;
+        order: 2;
     }
 
     .merch img {
-        width: auto;
+        width: 50vw;
         height: 100vh;
+    }
+
+    .merch h1 {
+        width: 11vw;
+        margin-top: 8%;
+        margin-left: 36vw;
     }
 
 }
