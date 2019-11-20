@@ -42,6 +42,29 @@ const navSlide = () => {
 
 navSlide();
 
+// Smooth scroll to top of page on click of svg logo
+
+document.querySelector("#top").addEventListener('click', scrollToTop);
+
+function scrollToTop() {
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    });
+}
+
+// Smooth scroll to next section
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 // // Function for the carousel image slide show
 
 // const carouselSlide = document.querySelector(".carousel-slide");
