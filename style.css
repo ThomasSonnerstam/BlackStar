@@ -26,61 +26,6 @@ main {
     overflow-x: hidden;
 }
 
-/* SPECIFICATIONS */
-
-.call-to-action {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--powderwhite);
-    width: 100vw;
-    height: 100vh;
-}
-
-.action-text {
-    margin-bottom: 8em;
-    margin-left: 5vw;
-}
-
-.action-text p {
-    margin-top: 1em;
-}
-
-.input-button-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-input {
-    align-self: center;
-    outline: none;
-    border: none;
-    background-color: var(--scandiumdark);
-    width: 90vw;
-    height: 4em;
-}
-
-input::placeholder {
-    font-size: 2em;
-    text-align: center;
-}
-
-input:focus::placeholder {
-    color: transparent;
-}
-
-button {
-    align-self: center;
-    width: 70vw;
-    height: 8vh;
-    outline: none;
-    border: none;
-    border-radius: 0.25em;
-    margin-top: 1.5em;
-    font-size: 1.5em;
-}
-
-
 /* CONTACT */
 
 .contact {
