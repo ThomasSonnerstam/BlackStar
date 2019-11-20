@@ -38,6 +38,10 @@ nav {
     fill: #EFF1F3;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 .nav-links-desktop {
     display: none;
 }
