@@ -16,13 +16,18 @@
 .hero-image {
     width: 100vw;
     height: 100vh;
-    background-image: url(https://media.giphy.com/media/DBbFEzsTCHE0B5nTDX/source.gif);
+    /* background-image: url(https://media.giphy.com/media/DBbFEzsTCHE0B5nTDX/source.gif);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column; */
+}
+
+.hero-image img {
+    width: auto;
+    height: 100vh;
 }
 
 .frontpage h1 {
@@ -30,13 +35,20 @@
     font-size: 2.5em;
     font-weight: 400;
     line-height: 1.2em;
-    margin: 0 20px 15vh;
+    margin: -35vh 4% 0;
+    z-index: 1;
+    position: absolute;
 }
 
 @media (min-width: 1024px) {
 
-    .slogan {
-        margin: 0 70px 10vh;
+    .frontpage h1 {
+        margin: -30vh 5% 0;
+        font-size: 3.5em;
     }
 
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
 }
