@@ -1,0 +1,48 @@
+.merch {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: right;
+    position: relative;
+}
+
+.merch h1 {
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 1.2em;
+    z-index: 1;
+    position: absolute;
+    margin: -55% 4% 0;
+}
+
+.merch img {
+    height: 100vh;
+    width: auto;
+}
+
+.underline::after {
+    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 3px;
+}
+
+@media (min-width: 1024px) {
+
+    .merch {
+        width: 50vw;
+        margin-left: auto;
+    }
+
+    .merch img {
+        width: auto;
+        height: 100vh;
+    }
+
+}
