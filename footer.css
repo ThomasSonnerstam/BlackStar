@@ -1,17 +1,11 @@
-:root {
-    --dawnorange: #FF8440;
-    --midnightblue: #061323;
-    --powderwhite: #EFF1F3;
-    --futuristicgrey: #BBCBD1;
-    --scandiumdark: #9CABB0;
-}
-
 footer {
     background-color: var(--scandiumdark);
     width: 100vw;
     height: 100vh;
-    display: block;
     bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .footer-logo {
@@ -29,7 +23,7 @@ footer p {
     margin: 2% 20px 3%;
 }
 
-.pdf {
+.button-pdf {
     width: 35vw;
     height: 8vh;
     font-size: 1em;
@@ -42,6 +36,10 @@ footer p {
     border: 2px solid var(--dawnorange);
     border-radius: 20px 5px 5px 3px;
     padding: 0.4em;
+    margin-top: -24vh;
+    margin-left: 65vw;
+    position: absolute;
+    z-index: 3;
 }
 
 .social-media {
@@ -49,7 +47,7 @@ footer p {
     justify-content: center;
 }
 
-ul {
+footer ul {
     display: flex;
     width: 80vw;
     height: 10vh;
@@ -62,7 +60,7 @@ ul {
     list-style-type: none;
 }
 
-li {
+footer li {
     display: block;
     max-height: 6vh;
     width: 25%;
@@ -70,11 +68,11 @@ li {
     text-align: center;
 }
 
-li svg {
+footer li svg {
     fill: var(--midnightblue);
 }
 
-hr {
+footer hr {
     border: 1px solid var(--midnightblue);
     margin: 2% 20px 3%;
 }

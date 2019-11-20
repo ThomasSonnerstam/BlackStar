@@ -47,6 +47,8 @@ const navSlide = () => {
 
 navSlide();
 
+
+
 // Smooth scroll to top of page on click of svg logo
 
 document.querySelector("#top").addEventListener('click', scrollToTop);
@@ -57,6 +59,8 @@ function scrollToTop() {
         behavior: "smooth",
     });
 }
+
+
 
 // Smooth scroll to next section
 
