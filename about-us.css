@@ -1,7 +1,7 @@
 .about-us {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(117, 46, 46);
+    background-color: #061323;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
