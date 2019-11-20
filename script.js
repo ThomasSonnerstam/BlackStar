@@ -47,7 +47,42 @@ const navSlide = () => {
 
 navSlide();
 
+// TEST FOR DOTS
 
+//Horizontal scroll
+const slider = document.querySelector(".carousel-slide");
+const dots = document.querySelectorAll(".dot");
+
+dots.forEach(dot => {
+    dot.addEventListener("click", () => {
+        const i = dot.dataset.index;
+        const sliderRect = slider.getBoundingClientRect().width;
+
+        slider.scrollLeft = sliderRect * i;
+    });
+});
+
+slider.addEventListener("scroll", () => {
+    const pageWidth = window.innerWidth;
+    const dotContainer = document.querySelector('.dot-center-placement');
+
+    for (let i = 0; i < dotContainer.childElementCount; i++) {
+        const dot = dotContainer.children[i];
+
+        if (
+            (slider.scrollLeft + (pageWidth / 2)) >= pageWidth * i &&
+            (slider.scrollLeft + (pageWidth / 2)) <= pageWidth * (i + 1)
+        ) {
+            dot.classList.add('active');
+        } else {
+            dot.classList.remove('active');
+        }
+
+    }
+
+});
+
+// END TEST
 
 // Smooth scroll to top of page on click of svg logo
 
