@@ -28,3 +28,22 @@
     width: 80vw;
     margin-left: 5vw;
 }
+
+@media (min-width: 1024px) {
+
+    .about-us {
+        width: 50vw;
+    }
+
+    .our-team {
+        width: 50%;
+    }
+
+    .our-mission {
+        width: 50%;
+    }
+
+    .history {
+        width: 80%;
+    }
+}
