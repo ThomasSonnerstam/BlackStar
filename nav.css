@@ -69,7 +69,7 @@ nav {
 .nav-links li {
     margin: 1em 0;
     opacity: 0;
-    width: 50%;
+    width: 70%;
     text-align: center;
 }
 
@@ -79,8 +79,13 @@ nav {
     text-decoration: none;
 }
 
+.nav-links .home-link {
+    margin-bottom: 5em;
+}
+
 .mini-logo {
-    fill: white;
+    width: 25px;
+    height: auto;
 }
 
 @keyframes navLinkFade {
