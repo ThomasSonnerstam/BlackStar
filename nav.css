@@ -70,12 +70,17 @@ nav {
     margin: 1em 0;
     opacity: 0;
     width: 50%;
+    text-align: center;
 }
 
 .nav-links a {
     color: var(--powderwhite);
     letter-spacing: 0.2em;
     text-decoration: none;
+}
+
+.mini-logo {
+    fill: white;
 }
 
 @keyframes navLinkFade {
@@ -127,11 +132,12 @@ nav {
 
     ul.nav-links-desktop {
         display: flex;
+        justify-content: flex-end;
         align-items: center;
         padding: 0;
         margin: 0;
-        min-width: 40vw;
-        max-width: 50vw;
+        min-width: 60vw;
+        max-width: 70vw;
         min-height: 7vh;
     }
 

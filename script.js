@@ -108,3 +108,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
+// Change the button text content on click
+
+const subBtn = document.querySelector(".call-to-action button");
+
+subBtn.addEventListener("click", () => {
+    subBtn.style.background = "#BBCBD1";
+    subBtn.textContent = "Thanks for subscribing!";
+})
