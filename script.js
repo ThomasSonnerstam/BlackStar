@@ -42,14 +42,13 @@ const navSlide = () => {
             burger.classList.toggle("toggle");
         })
     });
-
 }
 
 navSlide();
 
-// TEST FOR DOTS
+// Makes the navigation dots change color depending on what slide you're on
+// Works on click and on scroll.
 
-//Horizontal scroll
 const slider = document.querySelector(".carousel-slide");
 const dots = document.querySelectorAll(".dot");
 
@@ -77,12 +76,8 @@ slider.addEventListener("scroll", () => {
         } else {
             dot.classList.remove('active');
         }
-
     }
-
 });
-
-// END TEST
 
 // Smooth scroll to top of page on click of svg logo
 
@@ -94,8 +89,6 @@ function scrollToTop() {
         behavior: "smooth",
     });
 }
-
-
 
 // Smooth scroll to next section
 
@@ -109,12 +102,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Change the button text content on click with a transition
 
-// Change the button text content on click
 
 const subBtn = document.querySelector(".call-to-action button");
 
 subBtn.addEventListener("click", () => {
     subBtn.style.background = "#BBCBD1";
+    subBtn.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.25)";
     subBtn.textContent = "Thanks for subscribing!";
+    subBtn.style.transition = "all 1s linear";
 })
