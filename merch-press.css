@@ -30,6 +30,16 @@ span.new {
 
 .bobblenaut-content-wrapper {
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.bobblenaut-content-wrapper h2 {
+    margin-bottom: 1rem
+}
+
+.bobblenaut-content-wrapper h3 {
+    margin: 1rem 0;
 }
 
 .merchandise ul {
@@ -40,4 +50,19 @@ span.new {
 .merchandise li img {
     width: 30px;
     height: auto;
+}
+
+p.pre-order {
+    color: #FF8440;
+    position: relative;
+    right: 0;
+    margin-top: 1em;
+}
+
+.read-more-text {
+    color: #FF8440;
+}
+
+.read-more {
+    /* display: none; */
 }
