@@ -69,7 +69,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Merchandise read more text 
+// Merchandise read more/less options
+// When you click the "read more/read less" text you show or hide the rest of the content.
 
 const readMoreText = document.querySelector(".read-more-text");
 const readLessText = document.querySelector(".read-less-text");
