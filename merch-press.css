@@ -1,0 +1,43 @@
+body {
+    background-color: #EFF1F3;
+}
+
+.merchandise {
+    display: flex;
+    flex-direction: column;
+}
+
+span.new {
+    color: #FF8440;
+}
+
+.merchandise img {
+    width: 100vw;
+    height: auto;
+}
+
+.bobblenaut-image-wrapper {
+    position: relative;
+}
+
+.bobblenaut-image-wrapper h1 {
+    position: absolute;
+    color: #061323;
+    z-index: 2;
+    bottom: 5vh;
+    left: 5vw;
+}
+
+.bobblenaut-content-wrapper {
+    padding: 1em;
+}
+
+.merchandise ul {
+    list-style: none;
+    padding: 0;
+}
+
+.merchandise li img {
+    width: 30px;
+    height: auto;
+}
