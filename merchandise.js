@@ -46,39 +46,6 @@ const navSlide = () => {
 
 navSlide();
 
-// Makes the navigation dots change color depending on what slide you're on
-// Works on click and on scroll.
-
-const slider = document.querySelector(".carousel-slide");
-const dots = document.querySelectorAll(".dot");
-
-dots.forEach(dot => {
-    dot.addEventListener("click", () => {
-        const i = dot.dataset.index;
-        const sliderRect = slider.getBoundingClientRect().width;
-
-        slider.scrollLeft = sliderRect * i;
-    });
-});
-
-slider.addEventListener("scroll", () => {
-    const pageWidth = window.innerWidth;
-    const dotContainer = document.querySelector('.dot-center-placement');
-
-    for (let i = 0; i < dotContainer.childElementCount; i++) {
-        const dot = dotContainer.children[i];
-
-        if (
-            (slider.scrollLeft + (pageWidth / 2)) >= pageWidth * i &&
-            (slider.scrollLeft + (pageWidth / 2)) <= pageWidth * (i + 1)
-        ) {
-            dot.classList.add('active');
-        } else {
-            dot.classList.remove('active');
-        }
-    }
-});
-
 // Smooth scroll to top of page on click of svg logo
 
 document.querySelector("#top").addEventListener('click', scrollToTop);
@@ -102,26 +69,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Change the button text content on click with a transition
-
-
-const subBtn = document.querySelector(".call-to-action button");
-
-subBtn.addEventListener("click", () => {
-    subBtn.style.background = "#BBCBD1";
-    subBtn.style.boxShadow = "0px 0px 0px";
-    subBtn.textContent = "Thanks for subscribing!";
-    subBtn.style.transition = "all 1s linear";
-})
-
-
 // Merchandise read more text 
 
 const readMoreText = document.querySelector(".read-more-text");
-console.log(readMoreText);
-const readMore = () => {
-    const i = 0;
+const readLessText = document.querySelector(".read-less-text");
+const readMoreDiv = document.querySelector(".read-more");
 
-}
+readMoreText.addEventListener("click", () => {
+    readMoreDiv.style.display = "inline";
+    readMoreText.style.display = "none";
+})
 
-readMore();
+readLessText.addEventListener("click", () => {
+    readMoreDiv.style.display = "none";
+    readMoreText.style.display = "inline";
+})
