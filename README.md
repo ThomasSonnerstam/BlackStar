@@ -27,6 +27,15 @@ You can find the website [here](https://blackstar.netlify.com/).
 
 ## BUILT WITH
 
+- HTML
+- CSS
+- JavaScript
+- Adobe PhotoShop
+- Adobe Illustrator
+- Adobe Premiere Pro
+- 3DS Max
+- Vray
+
 
 ## INSTALLATION
 

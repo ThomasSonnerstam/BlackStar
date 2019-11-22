@@ -6,6 +6,9 @@
     flex-direction: column;
     justify-content: space-evenly;
     color: #EFF1F3;
+    background-image: url(./images/about_us.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .our-team {
