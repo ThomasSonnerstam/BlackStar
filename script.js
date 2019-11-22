@@ -109,7 +109,7 @@ const subBtn = document.querySelector(".call-to-action button");
 
 subBtn.addEventListener("click", () => {
     subBtn.style.background = "#BBCBD1";
-    subBtn.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.25)";
+    subBtn.style.boxShadow = "0px 0px 0px";
     subBtn.textContent = "Thanks for subscribing!";
     subBtn.style.transition = "all 1s linear";
 })
