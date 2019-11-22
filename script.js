@@ -113,3 +113,6 @@ subBtn.addEventListener("click", () => {
     subBtn.textContent = "Thanks for subscribing!";
     subBtn.style.transition = "all 1s linear";
 })
+
+
+// Merchandise read more text 
