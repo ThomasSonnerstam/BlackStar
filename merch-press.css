@@ -73,3 +73,25 @@ p.pre-order {
 .read-more {
     display: none;
 }
+
+@media (min-width: 1024px) {
+
+    .read-more-text,
+    .read-less-text {
+        display: none;
+    }
+
+    .read-more {
+        display: block;
+    }
+
+    .bobblenaut-image-wrapper {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .merchandise img {
+        width: 100vw;
+        height: 100vh;
+    }
+}
