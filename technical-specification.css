@@ -14,9 +14,8 @@
 
 .technical-specification h1 {
     font-size: 1.8em;
-    margin-top: -14vh;
     margin-left: 5vw;
-    position: absolute;
+    z-index: 2;
 }
 
 .technical-specification span {
@@ -41,6 +40,18 @@
     margin: 5vh 5vw;
     padding: 2vh 2vw;
     font-weight: 500;
+}
+
+.technical-details ul {
+    list-style-type: none;
+}
+
+.technical-details ul li::before {
+    content: url(./images/punktlista.svg);
+    width: 1vw;
+    height: 1vh;
+    margin-left: -7vw;
+    margin-right: 1vw;
 }
 
 .technical-details ul li {
