@@ -9,7 +9,7 @@
 .hero-video-mobile {
     width: 100vw;
     height: 100vh;
-    z-index: 0;
+    z-index: 1;
     position: absolute;
     /* background-image: url(https://media.giphy.com/media/DBbFEzsTCHE0B5nTDX/source.gif);
     background-attachment: fixed;
