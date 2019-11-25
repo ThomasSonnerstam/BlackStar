@@ -11,13 +11,6 @@
     height: 100vh;
     z-index: 1;
     position: absolute;
-    /* background-image: url(https://media.giphy.com/media/DBbFEzsTCHE0B5nTDX/source.gif);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column; */
 }
 
 .hero-video-mobile video {
