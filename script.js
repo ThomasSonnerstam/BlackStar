@@ -90,7 +90,7 @@ function scrollToTop() {
     });
 }
 
-// Smooth scroll to next section
+// Smooth scroll to section
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
