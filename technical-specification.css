@@ -1,21 +1,35 @@
+/* SECTION */
+
 .technical-specification {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100vw;
-    height: auto;
+    height: 100vh;
+    position: relative;
 }
 
 .technical-specification img {
     width: 100vw;
     height: auto;
-    margin-top: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
 }
+
+
+.technical-overlay-desktop {
+    visibility: hidden;
+}
+
+
+/* H1 ORANGE UNDERLINE */
 
 .technical-specification h1 {
     font-size: 1.8em;
-    margin-left: 5vw;
-    z-index: 2;
+    margin: 14vh 5vw 0;
+    z-index: 3;
+    position: absolute;
 }
 
 .technical-specification span {
@@ -33,29 +47,144 @@
     height: 3px;
 }
 
-.technical-details {
+
+/* UL CONTAINER MOBILE */
+
+.technical-overlay-mobile {
+    height: 75vh;
     border: 1px solid #FF8440;
     box-shadow: 0px 0px 2px #FF8440;
     color: #EFF1F3;
-    margin: 5vh 5vw;
+    margin: -15vh 5vw 5vh;
     padding: 5vh 5vw;
     font-weight: 500;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
-.technical-details ul {
+.technical-overlay-mobile ul {
     list-style-type: none;
     padding: 0;
+    position: absolute;
 }
 
-.technical-details ul li {
+.technical-overlay-mobile ul li {
     margin: 0 0 1.2em;
 }
 
-.technical-details li img {
+.technical-overlay-mobile li img {
     width: 30px;
     height: auto;
 }
 
-@media (min-width: 1024px) {}
+
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+
+    .technical-overlay-mobile {
+        display: none;
+    }
+
+    .technical-overlay-desktop {
+        visibility: visible;
+    }
+
+    .technical-overlay-desktop img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .technical-specification h1 {
+        display: none;
+    }
+
+    /* ANIMATED TECHNICAL OVERLAY DESKTOP */
+
+    .technical-overlay-desktop p {
+        display: none;
+        position: absolute;
+        line-height: 1.8em;
+    }
+
+    .hover-info {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        opacity: 0.7;
+        background-color: #FF8440;
+        box-shadow: 0 0 5px 2px lightgrey;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .hover-info:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    .hover-info:hover p {
+        display: block;
+        transform: translate(-30vw, -40vh);
+        -webkit-transform: translate(-30vw, -40vh);
+    }
+
+    .hover-info:nth-child(1) {
+        top: 65vh;
+        left: 30vw;
+    }
+
+    .hover-info:nth-child(2) {
+        top: 45vh;
+        left: 33vw;
+    }
+
+    .hover-info:nth-child(3) {
+        top: 32vh;
+        left: 45vw;
+    }
+
+    .hover-info:nth-child(4) {
+        top: 38vh;
+        left: 66vw;
+    }
+
+    .hover-info:nth-child(5) {
+        top: 58vh;
+        left: 68vw;
+    }
+
+    .hover-info:nth-child(1) p {
+        width: 12vw;
+        top: 30vh;
+        left: 15vw;
+    }
+
+    .hover-info:nth-child(2) p {
+        width: 18vw;
+        top: 30vh;
+        left: 15vw;
+    }
+
+    .hover-info:nth-child(3) p {
+        width: 18vw;
+        top: 30vh;
+        left: 15vw;
+    }
+
+    .hover-info:nth-child(4) p {
+        width: 25vw;
+        top: 30vh;
+        left: 35vw;
+    }
+
+    .hover-info:nth-child(5) p {
+        width: 18vw;
+        top: 40vh;
+        left: 35vw;
+    }
+
+}
