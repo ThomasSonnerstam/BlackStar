@@ -90,11 +90,23 @@ function scrollToTop() {
     });
 }
 
-// Smooth scroll to section
+
+// Smooth scroll to next section on click of arrow
+
+document.querySelector("#next").addEventListener('click', scrollIntoView);
+
+const next = document.querySelector("#tech-specs");
+
+function scrollIntoView() {
+    next.scrollIntoView(true);
+}
+
+
+// Menu smooth scroll to section
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+    anchor.addEventListener('click', function (event) {
+        event.preventDefault();
 
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
@@ -102,8 +114,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Change the button text content on click with a transition
 
+// Change the button text content on click with a transition
 
 const subBtn = document.querySelector(".call-to-action button");
 

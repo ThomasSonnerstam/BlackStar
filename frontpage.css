@@ -40,6 +40,10 @@
     bottom: 5vh;
 }
 
+.arrow-down:hover {
+    cursor: pointer;
+}
+
 @media (min-width: 1024px) {
 
     .frontpage h1 {
