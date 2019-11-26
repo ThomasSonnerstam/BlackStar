@@ -11,7 +11,8 @@
     background-size: cover;
 }
 
-.our-team {
+.our-team,
+.history {
     width: 80vw;
     margin-left: 5vw;
 }
@@ -25,11 +26,6 @@
 .our-mission h2,
 .our-mission p {
     text-align: right;
-}
-
-.history {
-    width: 80vw;
-    margin-left: 5vw;
 }
 
 @media (min-width: 1024px) {
