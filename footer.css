@@ -6,6 +6,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .footer-logo {
