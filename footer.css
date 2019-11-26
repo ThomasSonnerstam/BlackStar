@@ -12,39 +12,26 @@ footer {
 .footer-logo {
     fill: var(--midnightblue);
     stroke: var(--midnightblue);
-    width: 100%;
-    padding: 30% 10% 5%;
+    width: 60vw;
+    align-self: center;
 }
 
 footer h2 {
-    margin: 10% 20px 2%;
+    margin-left: 5vw;
 }
 
 footer p {
-    margin: 2% 20px 3%;
+    margin-left: 5vw;
 }
 
-.button-pdf {
-    width: 35vw;
-    height: 8vh;
-    font-size: 1em;
-    line-height: 1em;
-    font-weight: 500;
-    background-color: var(--futuristicgrey);
-    color: var(--powderwhite);
-    text-transform: uppercase;
-    text-align: center;
-    border: 2px solid var(--dawnorange);
-    border-radius: 20px 5px 5px 3px;
-    padding: 0.4em;
-    margin-top: -24vh;
-    margin-left: 65vw;
-    position: absolute;
-    z-index: 2;
+footer img {
+    width: 270px;
+    margin: 0 auto;
 }
 
 .social-media {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -53,11 +40,10 @@ footer ul {
     width: 80vw;
     height: 10vh;
     overflow-x: hidden;
-    justify-content: space-between;
     align-content: center;
     align-items: center;
-    margin: 5% 0 0;
-    padding: 0;
+    margin-left: 5vw;
+    margin-right: 5vw;
     list-style-type: none;
 }
 
@@ -76,7 +62,8 @@ footer li {
 
 footer hr {
     border: 1px solid var(--midnightblue);
-    margin: 2% 5% 3%;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .clarification {
@@ -87,45 +74,18 @@ footer hr {
 
 @media (min-width: 1024px) {
 
+
     .footer-logo {
-        width: 45%;
-        padding: 6% 4% 3%;
+        width: 25vw;
+        align-self: auto;
+        margin-left: 5vw;
     }
 
-    .button-pdf {
-        width: 15vw;
-        border-radius: 5px;
-        border: none;
-        font-size: 1.4em;
-        line-height: 1.2em;
-        margin-top: -50vh;
-        margin-left: 77vw;
-    }
-
-    .contact-info {
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: baseline;
-        margin: 0 5% 0;
-    }
-
-    footer ul {
-        width: 30vw;
-        height: auto;
-    }
-
-    footer li {
-        height: 100%;
-    }
-
-    .social-media ul svg {
-        height: 5vh;
-    }
-
-    footer hr {
-        margin: 0 4% 0;
+    footer img {
+        width: 400px;
+        margin-top: -20vh;
+        margin-left: 70vw;
+        position: absolute;
     }
 
     .clarification {
