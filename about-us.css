@@ -17,6 +17,10 @@
     margin-left: 5vw;
 }
 
+.history {
+    margin-bottom: 10vh;
+}
+
 .our-mission {
     width: 80vw;
     align-self: flex-end;
@@ -26,6 +30,26 @@
 .our-mission h2,
 .our-mission p {
     text-align: right;
+}
+
+.about-us-text {
+    margin-left: 5vw;
+    font-size: 2em;
+}
+
+.about-us span {
+    position: relative;
+}
+
+.about-us-text span:after {
+    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 3px;
 }
 
 @media (min-width: 1024px) {
