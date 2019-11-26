@@ -52,14 +52,27 @@ span.new {
 }
 
 .bobblenaut-content-wrapper h2 {
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+}
+
+.bobblenaut-content-wrapper h2 span {
+    position: relative;
+}
+
+.bobblenaut-content-wrapper h2 span:after {
+    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 3px;
 }
 
 .bobblenaut-content-wrapper h3 {
     margin: 1rem 0;
 }
-
-
 
 .merchandise ul {
     list-style-type: none;
