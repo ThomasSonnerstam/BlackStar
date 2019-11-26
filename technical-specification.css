@@ -112,8 +112,8 @@
 
     .hover-info {
         position: absolute;
-        width: 15px;
-        height: 15px;
+        width: 25px;
+        height: 25px;
         border-radius: 50%;
         opacity: 0.7;
         background-color: #FF8440;
@@ -138,12 +138,12 @@
     }
 
     .hover-info:nth-child(2) {
-        top: 45vh;
+        top: 44vh;
         left: 33vw;
     }
 
     .hover-info:nth-child(3) {
-        top: 32vh;
+        top: 31vh;
         left: 45vw;
     }
 
