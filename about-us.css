@@ -11,9 +11,14 @@
     background-size: cover;
 }
 
-.our-team {
+.our-team,
+.history {
     width: 80vw;
     margin-left: 5vw;
+}
+
+.history {
+    margin-bottom: 10vh;
 }
 
 .our-mission {
@@ -27,9 +32,24 @@
     text-align: right;
 }
 
-.history {
-    width: 80vw;
+.about-us-text {
     margin-left: 5vw;
+    font-size: 2em;
+}
+
+.about-us span {
+    position: relative;
+}
+
+.about-us-text span:after {
+    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 3px;
 }
 
 @media (min-width: 1024px) {
