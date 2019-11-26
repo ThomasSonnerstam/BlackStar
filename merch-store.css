@@ -17,15 +17,32 @@ span.new {
 }
 
 .bobblenaut-image-wrapper {
+    height: 70vh;
+    background-image: url("./images/bobblenaut-mobile.jpg");
+    background-size: cover;
     position: relative;
+    display: flex;
 }
 
 .bobblenaut-image-wrapper h1 {
-    position: absolute;
     color: #061323;
-    z-index: 2;
-    bottom: 5vh;
-    left: 5vw;
+    align-self: flex-end;
+    margin-left: 5vw;
+}
+
+.merch-span {
+    position: relative;
+}
+
+.merch-span:after {
+    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 3px;
 }
 
 .bobblenaut-content-wrapper {
@@ -42,13 +59,15 @@ span.new {
     margin: 1rem 0;
 }
 
+
+
 .merchandise ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 .merchandise li img {
-    width: 30px;
+    width: 20px;
     height: auto;
 }
 
@@ -74,6 +93,29 @@ p.pre-order {
     display: none;
 }
 
+/* MERCHANDISE ITEMS */
+
+.merch-items {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.merch-items img {
+    width: 100vw;
+    height: auto;
+    margin: 1vh 0;
+}
+
+.merch-items .last-item {
+    margin-bottom: 2vh;
+}
+
+.desktop-bobblenaut {
+    display: none;
+}
+
 @media (min-width: 1024px) {
 
     .read-more-text,
@@ -85,13 +127,62 @@ p.pre-order {
         display: block;
     }
 
-    .bobblenaut-image-wrapper {
+    .merchandise img {
         width: 100vw;
         height: 100vh;
     }
 
-    .merchandise img {
-        width: 100vw;
+    .bobblenaut-image-wrapper {
         height: 100vh;
+        width: 100vw;
+        background-image: url("./images/merch-shop-background-image-dekstop.jpg");
+        background-size: cover;
+    }
+
+    .bobblenaut-image-wrapper h1 {
+        margin-bottom: 22vh;
+    }
+
+    .bobblenaut-info-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bobblenaut-content-wrapper {
+        margin-top: 3em;
+    }
+
+    .desktop-bobblenaut {
+        display: block;
+        width: 35vw;
+        padding: 1em;
+        margin-top: 3em;
+    }
+
+    .desktop-bobblenaut .bobble-side {
+        width: auto;
+        height: 80vh;
+    }
+
+    .bobblenaut-content-wrapper {
+        width: 35vw;
+    }
+
+    /* MERCHANDISE ITEMS */
+
+    .merch-items {
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .merch-items img {
+        width: 30%;
+        height: auto;
+        margin: 5vh 0 5vh 0;
+    }
+
+    .merch-items .last-item {
+        margin: 5vh 0 5vh 0;
     }
 }
