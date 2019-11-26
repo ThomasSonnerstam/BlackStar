@@ -90,6 +90,10 @@ function scrollToTop() {
     });
 }
 
+// Smooth scroll to top of page on click of arrow in footer
+
+document.querySelector(".arrow-up").addEventListener('click', scrollToTop);
+
 
 // Smooth scroll to next section on click of arrow
 
