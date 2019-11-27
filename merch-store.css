@@ -156,13 +156,15 @@ p.pre-order {
         margin-bottom: 22vh;
     }
 
-    .bobblenaut-info-wrapper {
-        display: flex;
-        justify-content: center;
-    }
 
     .bobblenaut-content-wrapper {
         margin-top: 3em;
+    }
+
+    .bobblenaut-info-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10vw;
     }
 
     .desktop-bobblenaut {
@@ -173,8 +175,8 @@ p.pre-order {
     }
 
     .desktop-bobblenaut .bobble-side {
-        width: auto;
-        height: 80vh;
+        width: 50vh;
+        height: auto;
     }
 
     .bobblenaut-content-wrapper {
