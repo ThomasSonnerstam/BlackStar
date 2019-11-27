@@ -5,6 +5,11 @@
     text-align: left;
 }
 
+.merch a {
+    text-decoration: none;
+    color: var(--midnightblue);
+}
+
 .merch h2 {
     font-size: 2rem;
     font-weight: 500;

@@ -83,6 +83,10 @@ span.new {
     padding: 0;
 }
 
+.merchandise li {
+    margin-bottom: 1vh;
+}
+
 .merchandise li img {
     width: 20px;
     height: auto;
@@ -92,6 +96,7 @@ p.pre-order {
     color: #FF8440;
     position: relative;
     right: 0;
+    font-weight: bold;
 }
 
 .pre-order-wrapper {
