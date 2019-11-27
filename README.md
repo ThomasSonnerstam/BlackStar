@@ -24,6 +24,17 @@ You can find the website [here](https://blackstar.netlify.com/).
 
 ## PREVIEW
 
+This is how the website looks on desktop and on mobile phone.
+
+- Desktop:
+
+<img src="https://i.imgur.com/X6k4zeb.png" width=80%>  
+<img src="https://i.imgur.com/xqpRWiE.png" width=80%>
+
+- Mobile phone
+
+<img src="https://i.imgur.com/eByBEmj.png" width=50%/>
+<img src="https://i.imgur.com/1ifRznU.png" width=50%/>
 
 ## BUILT WITH
 
@@ -39,6 +50,10 @@ You can find the website [here](https://blackstar.netlify.com/).
 
 ## INSTALLATION
 
+- Clone this repository.
+- Open the folder in your code editor of choice.
+- Open ```index.html``` in your browser or via code editor extensions (i.e Live Server within Visual Studio Code).
+- You're now able to browse the web page.
 
 ## CODE REVIEW
 
