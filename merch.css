@@ -5,21 +5,20 @@
     text-align: left;
 }
 
-.merch h1 {
-    font-size: 2.5em;
+.merch h2 {
+    font-size: 2rem;
     font-weight: 500;
-    line-height: 1.2em;
     z-index: 1;
     position: absolute;
-    /* margin: 20% 4% 0; */
     margin-left: 5vw;
+    margin-top: 5vh;
 }
 
-.merch h1 span {
+.merch h2 span {
     position: relative;
 }
 
-.merch h1 span:after {
+.merch h2 span:after {
     background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
     content: '';
@@ -51,7 +50,7 @@
         object-fit: cover;
     }
 
-    .merch h1 {
+    .merch h2 {
         width: 25vw;
         text-align: right;
         right: 0;

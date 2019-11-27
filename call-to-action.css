@@ -12,6 +12,15 @@
     padding: 1vh 5vw;
 }
 
+.call-to-action .bold {
+    font-weight: bold;
+}
+
+.call-to-action h2 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
 .call-to-action span {
     position: relative;
 }
