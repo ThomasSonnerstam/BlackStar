@@ -5,31 +5,32 @@
     flex-direction: column;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
     position: relative;
 }
-
-.technical-specification img {
-    width: 100vw;
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-}
-
 
 .technical-overlay-desktop {
     visibility: hidden;
 }
 
+.technical-overlay-mobile {
+    display: flex;
+    flex-direction: column;
+    color: #EFF1F3;
+    font-weight: 500;
+    position: relative;
+}
+
+.technical-overlay-mobile img {
+    width: 100vw;
+    height: auto;
+}
 
 /* H1 ORANGE UNDERLINE */
 
-.technical-specification h1 {
+.technical-overlay-mobile h1 {
     font-size: 1.8em;
-    margin: 14vh 5vw 0;
+    margin-left: 5vw;
     z-index: 3;
-    position: absolute;
 }
 
 .technical-specification span {
@@ -47,26 +48,14 @@
     height: 3px;
 }
 
-
 /* UL CONTAINER MOBILE */
-
-.technical-overlay-mobile {
-    height: 75vh;
-    border: 1px solid #FF8440;
-    box-shadow: 0px 0px 2px #FF8440;
-    color: #EFF1F3;
-    margin: -15vh 5vw 5vh;
-    padding: 5vh 5vw;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
 
 .technical-overlay-mobile ul {
     list-style-type: none;
-    padding: 0;
-    position: absolute;
+    margin: 2vh 5vw 2vh;
+    padding: 5vh 5vw;
+    border: 1px solid #FF8440;
+    box-shadow: 0px 0px 2px #FF8440;
 }
 
 .technical-overlay-mobile ul li {
@@ -90,12 +79,12 @@
 
     .technical-overlay-desktop {
         visibility: visible;
+        position: relative;
     }
 
     .technical-overlay-desktop img {
         width: 100vw;
         height: 100vh;
-        object-fit: cover;
     }
 
     .technical-specification h1 {
@@ -112,12 +101,12 @@
 
     .hover-info {
         position: absolute;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        opacity: 0.7;
+        width: 22px;
+        height: 22px;
+        border-radius: 20%;
+        opacity: 0.8;
         background-color: #FF8440;
-        box-shadow: 0 0 5px 2px lightgrey;
+        /* box-shadow: 0 0 5px 2px lightgrey; */
         transition: all 0.4s ease-in-out;
     }
 
@@ -132,39 +121,33 @@
         -webkit-transform: translate(-30vw, -40vh);
     }
 
-    .hover-info:nth-child(1) {
-        top: 65vh;
-        left: 30vw;
-    }
-
     .hover-info:nth-child(2) {
-        top: 45vh;
-        left: 33vw;
+        top: 63%;
+        left: 31%;
     }
 
     .hover-info:nth-child(3) {
-        top: 32vh;
-        left: 45vw;
+        top: 42%;
+        left: 33%;
     }
 
     .hover-info:nth-child(4) {
-        top: 38vh;
-        left: 66vw;
+        top: 30%;
+        left: 45%;
     }
 
     .hover-info:nth-child(5) {
-        top: 58vh;
-        left: 68vw;
+        top: 36%;
+        left: 66%;
     }
 
-    .hover-info:nth-child(1) p {
-        width: 12vw;
-        top: 30vh;
-        left: 15vw;
+    .hover-info:nth-child(6) {
+        top: 55%;
+        left: 67%;
     }
 
     .hover-info:nth-child(2) p {
-        width: 18vw;
+        width: 12vw;
         top: 30vh;
         left: 15vw;
     }
@@ -176,12 +159,18 @@
     }
 
     .hover-info:nth-child(4) p {
+        width: 18vw;
+        top: 30vh;
+        left: 15vw;
+    }
+
+    .hover-info:nth-child(5) p {
         width: 25vw;
         top: 30vh;
         left: 35vw;
     }
 
-    .hover-info:nth-child(5) p {
+    .hover-info:nth-child(6) p {
         width: 18vw;
         top: 40vh;
         left: 35vw;
