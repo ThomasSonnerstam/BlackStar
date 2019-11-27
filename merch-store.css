@@ -1,5 +1,6 @@
 body {
     background-color: #EFF1F3;
+    overflow-x: hidden;
 }
 
 .merchandise {
@@ -19,6 +20,7 @@ span.new {
 .bobblenaut-image-wrapper {
     height: 70vh;
     background-image: url("./images/bobblenaut-mobile.jpg");
+    background-position: 0% 20%;
     background-size: cover;
     position: relative;
     display: flex;
@@ -113,12 +115,10 @@ p.pre-order {
     flex-direction: column;
 }
 
-
-
 .merch-items img {
-    width: 100vw;
+    width: 80vw;
     height: auto;
-    margin: 1vh 0;
+    margin: 1vh auto;
 }
 
 .merch-items .last-item {
@@ -127,6 +127,33 @@ p.pre-order {
 
 .desktop-bobblenaut {
     display: none;
+}
+
+@media (min-width: 700px) {
+    .bobblenaut-image-wrapper {
+        height: 100vh;
+        width: 100vw;
+        background-image: url("./images/merch-shop-background-image-dekstop.jpg");
+        background-size: cover;
+    }
+
+    /* MERCHANDISE ITEMS */
+
+    .merch-items {
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .merch-items img {
+        width: 30%;
+        height: auto;
+        margin: 5vh 0 5vh 0;
+    }
+
+    .merch-items .last-item {
+        margin: 5vh 0 5vh 0;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -143,13 +170,6 @@ p.pre-order {
     .merchandise img {
         width: 100vw;
         height: 100vh;
-    }
-
-    .bobblenaut-image-wrapper {
-        height: 100vh;
-        width: 100vw;
-        background-image: url("./images/merch-shop-background-image-dekstop.jpg");
-        background-size: cover;
     }
 
     .bobblenaut-image-wrapper h1 {
@@ -183,21 +203,4 @@ p.pre-order {
         width: 35vw;
     }
 
-    /* MERCHANDISE ITEMS */
-
-    .merch-items {
-        width: 100vw;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .merch-items img {
-        width: 30%;
-        height: auto;
-        margin: 5vh 0 5vh 0;
-    }
-
-    .merch-items .last-item {
-        margin: 5vh 0 5vh 0;
-    }
 }
