@@ -55,7 +55,3 @@ This is how the website looks on desktop and on mobile phone.
 - Open ```index.html``` in your browser or via code editor extensions (i.e Live Server within Visual Studio Code).
 - You're now able to browse the web page.
 
-## CODE REVIEW
-
-
-## TESTERS
