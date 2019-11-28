@@ -90,6 +90,11 @@ footer hr {
         position: absolute;
     }
 
+    footer ul {
+        width: 30vw;
+        align-self: flex-end;
+    }
+
     .clarification {
         font-size: 0.9em;
     }
