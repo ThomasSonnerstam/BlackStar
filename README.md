@@ -4,7 +4,7 @@ This is our first cross programme project done with digital designers and comput
 
 ## GROUP BLACKSTAR
 
-The group consists of two web developers, two digital designers and three computer graphic designers.
+The group consists of two web developers, two digital designers and three computer graphic designers!
 
 - [Thomas Sönnerstam](https://github.com/ThomasSonnerstam) - Web developer
 - [Terese Thulin](https://github.com/teresethulin) - Web developer, decider
