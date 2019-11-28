@@ -93,3 +93,7 @@ readLessText.addEventListener("click", () => {
     readMoreDiv.style.display = "none";
     readMoreText.style.display = "inline";
 })
+
+// When you click on the arrow up in the footer you scroll to the top of the page.
+
+document.querySelector(".arrow-up").addEventListener('click', scrollToTop);

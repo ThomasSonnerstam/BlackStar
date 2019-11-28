@@ -28,10 +28,12 @@
 .technical-overlay-mobile h1 {
     color: var(--midnightblue);
     font-size: 1.8em;
-    margin-top: 60vh;
     margin-left: 5vw;
     z-index: 1;
     position: absolute;
+    bottom: 0;
+    margin-bottom: 10vh;
+
 }
 
 .technical-specification span {
@@ -102,6 +104,15 @@
         display: none;
     }
 
+    .tech-desktop-title {
+        position: absolute;
+        top: 0;
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 12vh 0 0 5vw;
+
+    }
+
     /* ANIMATED TECHNICAL OVERLAY DESKTOP */
 
     .technical-overlay-desktop p {
@@ -117,7 +128,6 @@
         border-radius: 20%;
         opacity: 0.8;
         background-color: #FF8440;
-        /* box-shadow: 0 0 5px 2px lightgrey; */
         transition: all 0.4s ease-in-out;
     }
 
