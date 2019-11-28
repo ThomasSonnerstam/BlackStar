@@ -1,200 +1,200 @@
 /* SECTION */
 
 .technical-specification {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100vw;
+	position: relative;
 }
 
 /* CONTAINTER */
 
 .technical-overlay-mobile {
-    display: flex;
-    flex-direction: row;
-    color: #EFF1F3;
-    font-weight: 500;
-    position: relative;
+	display: flex;
+	flex-direction: row;
+	color: #EFF1F3;
+	font-weight: 500;
+	position: relative;
 }
 
 .technical-overlay-mobile img {
-    width: 100vw;
-    height: auto;
+	width: 100vw;
+	height: auto;
 }
 
 /* H1 ORANGE UNDERLINE */
 
 .technical-overlay-mobile h1 {
-    color: var(--midnightblue);
-    font-size: 1.8em;
-    margin-left: 5vw;
-    z-index: 1;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 10vh;
+	color: var(--midnightblue);
+	font-size: 1.8em;
+	margin-left: 5vw;
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 10vh;
 
 }
 
 .technical-specification span {
-    position: relative;
+	position: relative;
 }
 
 .technical-specification span::after {
-    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
-    content: '';
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 3px;
+	background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 132, 64, 1));
+	content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	height: 3px;
 }
 
 /* UL CONTAINER MOBILE */
 
 .specifications-ul-mobile {
-    margin: 0%;
-    padding: 5vh 5vw 5vh;
+	margin: 0%;
+	padding: 5vh 5vw 5vh;
 }
 
 .specifications-ul-mobile ul {
-    color: #EFF1F3;
-    list-style-type: none;
-    /* margin: 5vh 5vw 5vh; */
-    padding: 5vh 5vw;
-    border: 1px solid #FF8440;
-    box-shadow: 0px 0px 2px #FF8440;
+	color: #EFF1F3;
+	list-style-type: none;
+	/* margin: 5vh 5vw 5vh; */
+	padding: 5vh 5vw;
+	border: 1px solid #FF8440;
+	box-shadow: 0px 0px 2px #FF8440;
 }
 
 .specifications-ul-mobile ul li {
-    margin: 0 0 1.2em;
+	margin: 0 0 1.2em;
 }
 
 .specifications-ul-mobile li img {
-    width: 30px;
-    height: auto;
+	width: 20px;
+	height: auto;
 }
 
 
 .technical-overlay-desktop {
-    display: none;
+	display: none;
 }
 
 /* DESKTOP */
 
 @media (min-width: 1024px) {
 
-    .technical-overlay-mobile,
-    .specifications-ul-mobile {
-        display: none;
-    }
+	.technical-overlay-mobile,
+	.specifications-ul-mobile {
+		display: none;
+	}
 
-    .technical-overlay-desktop {
-        display: initial;
-        position: relative;
-    }
+	.technical-overlay-desktop {
+		display: initial;
+		position: relative;
+	}
 
-    .technical-overlay-desktop img {
-        width: 100vw;
-        height: 100vh;
-    }
+	.technical-overlay-desktop img {
+		width: 100vw;
+		height: 100vh;
+	}
 
-    .technical-specification h1 {
-        display: none;
-    }
+	.technical-specification h1 {
+		display: none;
+	}
 
-    .tech-desktop-title {
-        position: absolute;
-        top: 0;
-        font-size: 2rem;
-        font-weight: 500;
-        margin: 12vh 0 0 5vw;
+	.tech-desktop-title {
+		position: absolute;
+		top: 0;
+		font-size: 2rem;
+		font-weight: 500;
+		margin: 12vh 0 0 5vw;
 
-    }
+	}
 
-    /* ANIMATED TECHNICAL OVERLAY DESKTOP */
+	/* ANIMATED TECHNICAL OVERLAY DESKTOP */
 
-    .technical-overlay-desktop p {
-        display: none;
-        position: absolute;
-        line-height: 1.8em;
-    }
+	.technical-overlay-desktop p {
+		display: none;
+		position: absolute;
+		line-height: 1.8em;
+	}
 
-    .hover-info {
-        position: absolute;
-        width: 22px;
-        height: 22px;
-        border-radius: 20%;
-        opacity: 0.8;
-        background-color: #FF8440;
-        transition: all 0.4s ease-in-out;
-    }
+	.hover-info {
+		position: absolute;
+		width: 22px;
+		height: 22px;
+		border-radius: 20%;
+		opacity: 0.8;
+		background-color: #FF8440;
+		transition: all 0.4s ease-in-out;
+	}
 
-    .hover-info:hover {
-        cursor: pointer;
-        opacity: 1;
-    }
+	.hover-info:hover {
+		cursor: pointer;
+		opacity: 1;
+	}
 
-    .hover-info:hover p {
-        display: block;
-        transform: translate(-30vw, -40vh);
-        -webkit-transform: translate(-30vw, -40vh);
-    }
+	.hover-info:hover p {
+		display: block;
+		transform: translate(-30vw, -40vh);
+		-webkit-transform: translate(-30vw, -40vh);
+	}
 
-    .hover-info:nth-child(2) {
-        top: 63%;
-        left: 31%;
-    }
+	.hover-info:nth-child(2) {
+		top: 63%;
+		left: 31%;
+	}
 
-    .hover-info:nth-child(3) {
-        top: 42%;
-        left: 33%;
-    }
+	.hover-info:nth-child(3) {
+		top: 42%;
+		left: 33%;
+	}
 
-    .hover-info:nth-child(4) {
-        top: 30%;
-        left: 45%;
-    }
+	.hover-info:nth-child(4) {
+		top: 30%;
+		left: 45%;
+	}
 
-    .hover-info:nth-child(5) {
-        top: 36%;
-        left: 66%;
-    }
+	.hover-info:nth-child(5) {
+		top: 36%;
+		left: 66%;
+	}
 
-    .hover-info:nth-child(6) {
-        top: 55%;
-        left: 67%;
-    }
+	.hover-info:nth-child(6) {
+		top: 55%;
+		left: 67%;
+	}
 
-    .hover-info:nth-child(2) p {
-        width: 12vw;
-        top: 30vh;
-        left: 15vw;
-    }
+	.hover-info:nth-child(2) p {
+		width: 12vw;
+		top: 30vh;
+		left: 15vw;
+	}
 
-    .hover-info:nth-child(3) p {
-        width: 18vw;
-        top: 30vh;
-        left: 15vw;
-    }
+	.hover-info:nth-child(3) p {
+		width: 18vw;
+		top: 30vh;
+		left: 15vw;
+	}
 
-    .hover-info:nth-child(4) p {
-        width: 18vw;
-        top: 30vh;
-        left: 15vw;
-    }
+	.hover-info:nth-child(4) p {
+		width: 18vw;
+		top: 30vh;
+		left: 15vw;
+	}
 
-    .hover-info:nth-child(5) p {
-        width: 25vw;
-        top: 30vh;
-        left: 35vw;
-    }
+	.hover-info:nth-child(5) p {
+		width: 25vw;
+		top: 30vh;
+		left: 35vw;
+	}
 
-    .hover-info:nth-child(6) p {
-        width: 18vw;
-        top: 40vh;
-        left: 35vw;
-    }
+	.hover-info:nth-child(6) p {
+		width: 18vw;
+		top: 40vh;
+		left: 35vw;
+	}
 
 }
