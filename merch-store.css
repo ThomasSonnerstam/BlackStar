@@ -190,7 +190,7 @@ p.pre-order {
 
     .bobblenaut-info-wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 0 10vw;
     }
 
