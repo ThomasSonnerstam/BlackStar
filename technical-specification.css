@@ -8,13 +8,11 @@
     position: relative;
 }
 
-.technical-overlay-desktop {
-    visibility: hidden;
-}
+/* CONTAINTER */
 
 .technical-overlay-mobile {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     color: #EFF1F3;
     font-weight: 500;
     position: relative;
@@ -28,9 +26,12 @@
 /* H1 ORANGE UNDERLINE */
 
 .technical-overlay-mobile h1 {
+    color: var(--midnightblue);
     font-size: 1.8em;
+    margin-top: 60vh;
     margin-left: 5vw;
-    z-index: 3;
+    z-index: 1;
+    position: absolute;
 }
 
 .technical-specification span {
@@ -50,35 +51,45 @@
 
 /* UL CONTAINER MOBILE */
 
-.technical-overlay-mobile ul {
+.specifications-ul-mobile {
+    margin: 0%;
+    padding: 5vh 5vw 5vh;
+}
+
+.specifications-ul-mobile ul {
+    color: #EFF1F3;
     list-style-type: none;
-    margin: 2vh 5vw 2vh;
+    /* margin: 5vh 5vw 5vh; */
     padding: 5vh 5vw;
     border: 1px solid #FF8440;
     box-shadow: 0px 0px 2px #FF8440;
 }
 
-.technical-overlay-mobile ul li {
+.specifications-ul-mobile ul li {
     margin: 0 0 1.2em;
 }
 
-.technical-overlay-mobile li img {
+.specifications-ul-mobile li img {
     width: 30px;
     height: auto;
 }
 
 
+.technical-overlay-desktop {
+    display: none;
+}
 
 /* DESKTOP */
 
 @media (min-width: 1024px) {
 
-    .technical-overlay-mobile {
+    .technical-overlay-mobile,
+    .specifications-ul-mobile {
         display: none;
     }
 
     .technical-overlay-desktop {
-        visibility: visible;
+        display: initial;
         position: relative;
     }
 
