@@ -1,3 +1,11 @@
+"use strict"
+
+document.querySelector("#top").addEventListener('click', startOfPage);
+
+function startOfPage() {
+    location.href = 'index.html';
+}
+
 // Function to toggle the navigation bar on and off with the hamburger menu icon.
 
 const navSlide = () => {

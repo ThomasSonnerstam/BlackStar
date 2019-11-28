@@ -1,3 +1,5 @@
+"use strict"
+
 // Function to toggle the navigation bar on and off with the hamburger menu icon.
 
 const navSlide = () => {
@@ -89,6 +91,7 @@ function scrollToTop() {
         behavior: "smooth",
     });
 }
+
 
 // Smooth scroll to top of page on click of arrow in footer
 
